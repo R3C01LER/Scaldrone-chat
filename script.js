@@ -1,5 +1,5 @@
 const CLIENT_ID = 'ULEFc6b6MxmGhypc';
-function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
+unction get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
     name: getRandomName(),
@@ -61,6 +61,7 @@ function getRandomName() {
     var currenttitle=get_cookie("currenttitle");
     return (currenttitle+": "+name);
 }
+
 
 //------------- DOM STUFF
 
